@@ -1,0 +1,187 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>spring-mvc</groupId>
+	<artifactId>Project5</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>war</packaging>
+
+	<properties>
+		<java-version>1.8</java-version>
+		<org.springframework-version>5.0.8.RELEASE</org.springframework-version>
+		<org.aspectj-version>1.8.1</org.aspectj-version>
+	</properties>
+
+  
+ 
+	<dependencies>
+		<!-- Spring related dependencies -->
+
+	
+	
+<!-- https://mvnrepository.com/artifact/org.springframework/spring-jdbc -->
+<dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-jdbc</artifactId>
+    <version>5.1.5.RELEASE</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/org.springframework/spring-webmvc -->
+<dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-webmvc</artifactId>
+    <version>5.1.5.RELEASE</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/org.springframework/spring-context -->
+<dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-context</artifactId>
+    <version>5.1.5.RELEASE</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/org.springframework/spring-beans -->
+<dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-beans</artifactId>
+    <version>5.1.5.RELEASE</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/org.springframework/spring-core -->
+<dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-core</artifactId>
+    <version>5.1.5.RELEASE</version>
+</dependency>
+		  <!-- tag::security[] -->
+        <!-- end::security[] -->
+        
+		<!-- /Spring related dependencies -->
+		
+
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>8.0.11</version>
+		</dependency>
+
+
+
+		<dependency>
+		    <groupId>commons-collections</groupId>
+		    <artifactId>commons-collections</artifactId>
+		    <version>3.2.1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>javax.transaction</groupId>
+			<artifactId>jta</artifactId>
+			<version>1.1</version>
+		</dependency>
+
+<!-- https://mvnrepository.com/artifact/org.springframework/spring-core -->
+<dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-core</artifactId>
+    <version>5.1.5.RELEASE</version>
+</dependency>
+
+	<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.17</version>
+		</dependency>
+		
+
+		<dependency>
+			<groupId>commons-logging</groupId>
+			<artifactId>commons-logging</artifactId>
+			<version>1.2</version>
+		</dependency>
+        
+
+ <!-- not needed for external tomcat -->       
+  <!--       <dependency>
+            <groupId>org.webjars</groupId>
+            <artifactId>webjars-locator-core</artifactId>
+              <version>0.34</version>
+        </dependency>
+     -->
+
+<!-- https://mvnrepository.com/artifact/org.springframework/spring-web -->
+<dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-web</artifactId>
+    <version>5.1.5.RELEASE</version>
+</dependency>
+
+
+<!-- https://mvnrepository.com/artifact/javax.servlet/servlet-api -->
+<dependency>
+    <groupId>javax.servlet</groupId>
+    <artifactId>servlet-api</artifactId>
+    <version>2.5</version>
+    <scope>provided</scope>
+</dependency>
+	
+	<dependency>
+		<groupId>taglibs</groupId>
+		<artifactId>standard</artifactId>
+		<version>1.1.2</version>
+	</dependency>
+
+<!-- https://mvnrepository.com/artifact/javax.annotation/javax.annotation-api -->
+<dependency>
+    <groupId>javax.annotation</groupId>
+    <artifactId>javax.annotation-api</artifactId>
+    <version>1.2</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/org.aspectj/aspectjtools -->
+<dependency>
+    <groupId>org.aspectj</groupId>
+    <artifactId>aspectjtools</artifactId>
+    <version>1.6.2</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/org.springframework/spring-orm -->
+<dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-orm</artifactId>
+    <version>5.0.2.RELEASE</version>
+</dependency>
+
+	</dependencies>
+<!-- 
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+
+		</plugins>
+	</build> -->
+	
+		<build>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-compiler-plugin</artifactId>
+					<version>3.2</version>
+					<configuration>
+						<verbose>true</verbose>
+						<source>1.8</source>
+						<target>1.8</target>
+						<showWarnings>true</showWarnings>
+						<downloadSources>true</downloadSources>
+						<downloadJavadocs>true</downloadJavadocs>
+					</configuration>
+				</plugin>
+			
+			</plugins>
+		</pluginManagement>
+	</build>
+
+</project>

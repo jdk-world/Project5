@@ -63,13 +63,6 @@ public class Triangle implements InitializingBean, DisposableBean {
 		this.name = name;
 	}
 
-	public MessageSource getMessageSource() {
-		return messageSource;
-	}
-
-	public void setMessageSource(MessageSource messageSource) {
-		this.messageSource = messageSource;
-	}
 
 	@PostConstruct
 	public void postInit() {
